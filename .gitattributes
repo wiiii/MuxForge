@@ -5,3 +5,4 @@ ffprobe.exe filter=lfs diff=lfs merge=lfs -text
 *.bat linguist-language=shell
 tools/VT-PR/vinetrimmer/** linguist-language=python
 *.exe linguist-language=C++
+*.dll linguist-language=other
