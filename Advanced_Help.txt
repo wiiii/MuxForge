@@ -1,5 +1,5 @@
 =============================
-   JJmpeg - Advanced Commands
+   MuxForge - Advanced Commands
 =============================
 
 This lists all commands, including raw ffmpeg options.
@@ -8,14 +8,14 @@ Unknown arguments are forwarded directly to ffmpeg.
 
 FFmpeg Help:
 ------------------------------------
-ffmpeg version 2025-11-10-git-133a0bcb13-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+ffmpeg version 2025-12-28-git-9ab2a437a1-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
   built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
-  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
-  libavutil      60. 17.100 / 60. 17.100
-  libavcodec     62. 19.100 / 62. 19.100
-  libavformat    62.  6.101 / 62.  6.101
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 20.100 / 60. 20.100
+  libavcodec     62. 23.102 / 62. 23.102
+  libavformat    62.  8.101 / 62.  8.101
   libavdevice    62.  2.100 / 62.  2.100
-  libavfilter    11.  9.100 / 11.  9.100
+  libavfilter    11. 10.101 / 11. 10.101
   libswscale      9.  3.100 /  9.  3.100
   libswresample   6.  2.100 /  6.  2.100
 Universal media converter
@@ -2256,6 +2256,22 @@ libsvtav1 AVOptions:
   -dolbyvision       <boolean>    E..V....... Enable Dolby Vision RPU coding (default auto)
      auto                         E..V.......
 
+libsvtjpegxs AVOptions:
+  -decomp_v          <int>        E..V....... vertical decomposition level (from -1 to 2) (default -1)
+  -decomp_h          <int>        E..V....... horizontal decomposition level (from -1 to 5) (default -1)
+  -quantization      <int>        E..V....... Quantization algorithm (from -1 to 1) (default -1)
+     deadzone        0            E..V.......
+     uniform         1            E..V.......
+  -coding-signs      <int>        E..V....... Enable Signs handling strategy (from -1 to 2) (default -1)
+     disable         0            E..V.......
+     fast            1            E..V.......
+     full            2            E..V.......
+  -coding-sigf       <boolean>    E..V....... Enable Significance coding (default auto)
+  -coding-vpred      <int>        E..V....... Enable Vertical Prediction coding (from -1 to 2) (default -1)
+     disable         0            E..V.......
+     no_residuals    1            E..V.......
+     no_coeffs       2            E..V.......
+
 libtheora AVOptions:
   -speed_level       <int>        E..V....... Sets the encoding speed level (from -1 to INT_MAX) (default -1)
 
@@ -3174,6 +3190,15 @@ h264_d3d12va AVOptions:
   -b_depth           <int>        E..V....... Maximum B-frame reference depth (from 1 to INT_MAX) (default 1)
   -async_depth       <int>        E..V....... Maximum processing parallelism. Increase this to improve single channel performance. (from 1 to 64) (default 2)
   -max_frame_size    <int>        E..V....... Maximum frame size (in bytes) (from 0 to 2.68435e+08) (default 0)
+  -intra_refresh_mode <int>        E..V....... Set intra refresh mode (from 0 to 1) (default none)
+     none            0            E..V....... Disable intra refresh
+     row_based       1            E..V....... Row-based intra refresh
+  -intra_refresh_duration <int>        E..V....... Number of frames over which to spread intra refresh (0 = GOP size) (from 0 to INT_MAX) (default 0)
+  -me_precision      <int>        E..V....... Motion estimation precision mode (from 0 to 3) (default maximum)
+     maximum         0            E..V....... Maximum (best quality, slowest)
+     full_pixel      1            E..V....... Full pixel precision
+     half_pixel      2            E..V....... Half pixel precision
+     quarter_pixel   3            E..V....... Quarter pixel precision
   -rc_mode           <int>        E..V....... Set rate control mode (from 0 to 4) (default auto)
      auto            0            E..V....... Choose mode automatically based on other parameters
      CQP             1            E..V....... Constant-quality
@@ -3688,6 +3713,15 @@ hevc_d3d12va AVOptions:
   -b_depth           <int>        E..V....... Maximum B-frame reference depth (from 1 to INT_MAX) (default 1)
   -async_depth       <int>        E..V....... Maximum processing parallelism. Increase this to improve single channel performance. (from 1 to 64) (default 2)
   -max_frame_size    <int>        E..V....... Maximum frame size (in bytes) (from 0 to 2.68435e+08) (default 0)
+  -intra_refresh_mode <int>        E..V....... Set intra refresh mode (from 0 to 1) (default none)
+     none            0            E..V....... Disable intra refresh
+     row_based       1            E..V....... Row-based intra refresh
+  -intra_refresh_duration <int>        E..V....... Number of frames over which to spread intra refresh (0 = GOP size) (from 0 to INT_MAX) (default 0)
+  -me_precision      <int>        E..V....... Motion estimation precision mode (from 0 to 3) (default maximum)
+     maximum         0            E..V....... Maximum (best quality, slowest)
+     full_pixel      1            E..V....... Full pixel precision
+     half_pixel      2            E..V....... Half pixel precision
+     quarter_pixel   3            E..V....... Quarter pixel precision
   -rc_mode           <int>        E..V....... Set rate control mode (from 0 to 4) (default auto)
      auto            0            E..V....... Choose mode automatically based on other parameters
      CQP             1            E..V....... Constant-quality
@@ -4831,7 +4865,7 @@ http AVOptions:
   -http_proxy        <string>     ED......... set HTTP proxy to tunnel through
   -headers           <string>     ED......... set custom HTTP headers, can override built in default headers
   -content_type      <string>     ED......... set a specific content type for the POST messages
-  -user_agent        <string>     .D......... override User-Agent header (default "Lavf/62.6.101")
+  -user_agent        <string>     .D......... override User-Agent header (default "Lavf/62.8.101")
   -referer           <string>     .D......... override referer header
   -multiple_requests <boolean>    ED......... use persistent connections (default false)
   -post_data         <binary>     ED......... set custom HTTP post data
@@ -4865,7 +4899,7 @@ https AVOptions:
   -http_proxy        <string>     ED......... set HTTP proxy to tunnel through
   -headers           <string>     ED......... set custom HTTP headers, can override built in default headers
   -content_type      <string>     ED......... set a specific content type for the POST messages
-  -user_agent        <string>     .D......... override User-Agent header (default "Lavf/62.6.101")
+  -user_agent        <string>     .D......... override User-Agent header (default "Lavf/62.8.101")
   -referer           <string>     .D......... override referer header
   -multiple_requests <boolean>    ED......... use persistent connections (default false)
   -post_data         <binary>     ED......... set custom HTTP post data
@@ -5893,26 +5927,26 @@ nutenc AVOptions:
 
 Ogg (audio/video/Speex/Opus) muxer AVOptions:
   -serial_offset     <int>        E.......... serial number offset (from 0 to INT_MAX) (default 0)
-  -oggpagesize       <int>        E.......... Set preferred Ogg page size. (from 0 to 65025) (default 0)
-  -pagesize          <int>        E.......... preferred page size in bytes (deprecated) (from 0 to 65025) (default 0)
+  -oggpagesize       <int>        E.........P Set preferred Ogg page size. (from 0 to 65025) (default 0)
+  -pagesize          <int>        E.........P preferred page size in bytes (from 0 to 65025) (default 0)
   -page_duration     <int64>      E.......... preferred page duration, in microseconds (from 0 to I64_MAX) (default 1000000)
 
 Ogg (audio/video/Speex/Opus) muxer AVOptions:
   -serial_offset     <int>        E.......... serial number offset (from 0 to INT_MAX) (default 0)
-  -oggpagesize       <int>        E.......... Set preferred Ogg page size. (from 0 to 65025) (default 0)
-  -pagesize          <int>        E.......... preferred page size in bytes (deprecated) (from 0 to 65025) (default 0)
+  -oggpagesize       <int>        E.........P Set preferred Ogg page size. (from 0 to 65025) (default 0)
+  -pagesize          <int>        E.........P preferred page size in bytes (from 0 to 65025) (default 0)
   -page_duration     <int64>      E.......... preferred page duration, in microseconds (from 0 to I64_MAX) (default 1000000)
 
 Ogg (audio/video/Speex/Opus) muxer AVOptions:
   -serial_offset     <int>        E.......... serial number offset (from 0 to INT_MAX) (default 0)
-  -oggpagesize       <int>        E.......... Set preferred Ogg page size. (from 0 to 65025) (default 0)
-  -pagesize          <int>        E.......... preferred page size in bytes (deprecated) (from 0 to 65025) (default 0)
+  -oggpagesize       <int>        E.........P Set preferred Ogg page size. (from 0 to 65025) (default 0)
+  -pagesize          <int>        E.........P preferred page size in bytes (from 0 to 65025) (default 0)
   -page_duration     <int64>      E.......... preferred page duration, in microseconds (from 0 to I64_MAX) (default 1000000)
 
 Ogg (audio/video/Speex/Opus) muxer AVOptions:
   -serial_offset     <int>        E.......... serial number offset (from 0 to INT_MAX) (default 0)
-  -oggpagesize       <int>        E.......... Set preferred Ogg page size. (from 0 to 65025) (default 0)
-  -pagesize          <int>        E.......... preferred page size in bytes (deprecated) (from 0 to 65025) (default 0)
+  -oggpagesize       <int>        E.........P Set preferred Ogg page size. (from 0 to 65025) (default 0)
+  -pagesize          <int>        E.........P preferred page size in bytes (from 0 to 65025) (default 0)
   -page_duration     <int64>      E.......... preferred page duration, in microseconds (from 0 to I64_MAX) (default 1000000)
 
 mov/mp4/tgp/psp/tg2/ipod/ismv/f4v muxer AVOptions:
@@ -6020,7 +6054,7 @@ RTSP muxer AVOptions:
   -reorder_queue_size <int>        .D......... set number of packets to buffer for handling of reordered packets (from -1 to INT_MAX) (default -1)
   -buffer_size       <int>        ED......... Underlying protocol send/receive buffer size (from -1 to INT_MAX) (default -1)
   -pkt_size          <int>        E.......... Underlying protocol send packet size (from -1 to INT_MAX) (default 1472)
-  -user_agent        <string>     .D......... override User-Agent header (default "Lavf62.6.101")
+  -user_agent        <string>     .D......... override User-Agent header (default "Lavf62.8.101")
   -ca_file           <string>     ED......... Certificate Authority database file
   -cafile            <string>     ED......... Certificate Authority database file
   -tls_verify        <boolean>    ED......... Verify the peer certificate (default false)
@@ -6116,8 +6150,8 @@ smooth streaming muxer AVOptions:
 
 Ogg (audio/video/Speex/Opus) muxer AVOptions:
   -serial_offset     <int>        E.......... serial number offset (from 0 to INT_MAX) (default 0)
-  -oggpagesize       <int>        E.......... Set preferred Ogg page size. (from 0 to 65025) (default 0)
-  -pagesize          <int>        E.......... preferred page size in bytes (deprecated) (from 0 to 65025) (default 0)
+  -oggpagesize       <int>        E.........P Set preferred Ogg page size. (from 0 to 65025) (default 0)
+  -pagesize          <int>        E.........P preferred page size in bytes (from 0 to 65025) (default 0)
   -page_duration     <int64>      E.......... preferred page duration, in microseconds (from 0 to I64_MAX) (default 1000000)
 
 spdif AVOptions:
@@ -6390,7 +6424,7 @@ Binary text demuxer AVOptions:
   -framerate         <video_rate> .D......... set framerate (frames per second) (default "25")
 
 bitpacked demuxer AVOptions:
-  -pixel_format      <string>     .D......... set pixel format (default "yuv420p")
+  -pixel_format      <pix_fmt>    .D......... set pixel format (default yuv420p)
   -video_size        <image_size> .D......... set frame size
   -framerate         <video_rate> .D......... set frame rate (default "25")
 
@@ -6777,7 +6811,8 @@ pcm demuxer AVOptions:
   -ch_layout         <channel_layout> .D.........  (default "mono")
 
 rawvideo demuxer AVOptions:
-  -pixel_format      <string>     .D......... set pixel format (default "yuv420p")
+  -stride            [<int>     ].D......... frame line size in bytes
+  -pixel_format      <pix_fmt>    .D......... set pixel format (default yuv420p)
   -video_size        <image_size> .D......... set frame size
   -framerate         <video_rate> .D......... set frame rate (default "25")
 
@@ -6826,7 +6861,7 @@ RTSP demuxer AVOptions:
   -reorder_queue_size <int>        .D......... set number of packets to buffer for handling of reordered packets (from -1 to INT_MAX) (default -1)
   -buffer_size       <int>        ED......... Underlying protocol send/receive buffer size (from -1 to INT_MAX) (default -1)
   -pkt_size          <int>        E.......... Underlying protocol send packet size (from -1 to INT_MAX) (default 1472)
-  -user_agent        <string>     .D......... override User-Agent header (default "Lavf62.6.101")
+  -user_agent        <string>     .D......... override User-Agent header (default "Lavf62.8.101")
   -ca_file           <string>     ED......... Certificate Authority database file
   -cafile            <string>     ED......... Certificate Authority database file
   -tls_verify        <boolean>    ED......... Verify the peer certificate (default false)
@@ -6929,6 +6964,13 @@ eXtended BINary text (XBIN) demuxer AVOptions:
   -linespeed         <int>        .D......... set simulated line speed (bytes per second) (from 1 to INT_MAX) (default 6000)
   -video_size        <image_size> .D......... set video size, such as 640x480 or hd720.
   -framerate         <video_rate> .D......... set framerate (frames per second) (default "25")
+
+imagepipe demuxer AVOptions:
+  -frame_size        <int>        .D......... force frame size in bytes (from 0 to INT_MAX) (default 0)
+  -framerate         <video_rate> .D......... set the video framerate (default "25")
+  -pixel_format      <string>     .D......... set video pixel format
+  -video_size        <image_size> .D......... set video size
+  -loop              <boolean>    .D......... force loop over input file sequence (default false)
 
 imagepipe demuxer AVOptions:
   -frame_size        <int>        .D......... force frame size in bytes (from 0 to INT_MAX) (default 0)
@@ -8157,6 +8199,10 @@ aloop AVOptions:
 
 amerge AVOptions:
    inputs            <int>        ..F.A...... specify the number of inputs (from 1 to 64) (default 2)
+   layout_mode       <int>        ..F.A...... method used to determine the output channel layout (from 0 to 2) (default legacy)
+     legacy          0            ..F.A......
+     reset           1            ..F.A......
+     normal          2            ..F.A......
 
 ametadata AVOptions:
    mode              <int>        ..F.A...... set a mode of operation (from 0 to 4) (default select)
@@ -8462,7 +8508,8 @@ asidedata AVOptions:
      SPHERICAL       13           ..F.A...... 
      CONTENT_LIGHT_LEVEL 14           ..F.A...... 
      ICC_PROFILE     15           ..F.A...... 
-     S12M_TIMECOD    16           ..F.A...... 
+     S12M_TIMECOD    16           ..F.A.....P 
+     S12M_TIMECODE   16           ..F.A...... 
      DYNAMIC_HDR_PLUS 17           ..F.A...... 
      REGIONS_OF_INTEREST 18           ..F.A...... 
      VIDEO_ENC_PARAMS 19           ..F.A...... 
@@ -11031,7 +11078,7 @@ colorspace AVOptions:
      mpeg            1            ..FV....... 
      pc              2            ..FV....... 
      jpeg            2            ..FV....... 
-   primaries         <int>        ..FV....... Output color primaries (from 0 to 22) (default 2)
+   primaries         <int>        ..FV....... Output color primaries (from 0 to 256) (default 2)
      bt709           1            ..FV....... 
      bt470m          4            ..FV....... 
      bt470bg         5            ..FV....... 
@@ -11044,7 +11091,8 @@ colorspace AVOptions:
      bt2020          9            ..FV....... 
      jedec-p22       22           ..FV....... 
      ebu3213         22           ..FV....... 
-   trc               <int>        ..FV....... Output transfer characteristics (from 0 to 18) (default 2)
+     vgamut          256          ..FV....... 
+   trc               <int>        ..FV....... Output transfer characteristics (from 0 to 256) (default 2)
      bt709           1            ..FV....... 
      bt470m          4            ..FV....... 
      gamma22         4            ..FV....... 
@@ -11059,6 +11107,7 @@ colorspace AVOptions:
      iec61966-2-4    11           ..FV....... 
      bt2020-10       14           ..FV....... 
      bt2020-12       15           ..FV....... 
+     vlog            256          ..FV....... 
    format            <int>        ..FV....... Output pixel format (from -1 to 161) (default -1)
      yuv420p         0            ..FV....... 
      yuv420p10       62           ..FV....... 
@@ -11104,7 +11153,7 @@ colorspace AVOptions:
      mpeg            1            ..FV....... 
      pc              2            ..FV....... 
      jpeg            2            ..FV....... 
-   iprimaries        <int>        ..FV....... Input color primaries (from 0 to 22) (default 2)
+   iprimaries        <int>        ..FV....... Input color primaries (from 0 to 256) (default 2)
      bt709           1            ..FV....... 
      bt470m          4            ..FV....... 
      bt470bg         5            ..FV....... 
@@ -11117,7 +11166,8 @@ colorspace AVOptions:
      bt2020          9            ..FV....... 
      jedec-p22       22           ..FV....... 
      ebu3213         22           ..FV....... 
-   itrc              <int>        ..FV....... Input transfer characteristics (from 0 to 18) (default 2)
+     vgamut          256          ..FV....... 
+   itrc              <int>        ..FV....... Input transfer characteristics (from 0 to 256) (default 2)
      bt709           1            ..FV....... 
      bt470m          4            ..FV....... 
      gamma22         4            ..FV....... 
@@ -11132,6 +11182,7 @@ colorspace AVOptions:
      iec61966-2-4    11           ..FV....... 
      bt2020-10       14           ..FV....... 
      bt2020-12       15           ..FV....... 
+     vlog            256          ..FV....... 
 
 colorspace_cuda AVOptions:
    range             <int>        ..FV....... Output video range (from 0 to 2) (default 0)
@@ -14440,7 +14491,8 @@ sidedata AVOptions:
      SPHERICAL       13           ..FV....... 
      CONTENT_LIGHT_LEVEL 14           ..FV....... 
      ICC_PROFILE     15           ..FV....... 
-     S12M_TIMECOD    16           ..FV....... 
+     S12M_TIMECOD    16           ..FV......P 
+     S12M_TIMECODE   16           ..FV....... 
      DYNAMIC_HDR_PLUS 17           ..FV....... 
      REGIONS_OF_INTEREST 18           ..FV....... 
      VIDEO_ENC_PARAMS 19           ..FV....... 
@@ -15906,19 +15958,21 @@ zscale AVOptions:
      ordered         1            ..FV.......
      random          2            ..FV.......
      error_diffusion 3            ..FV.......
-   filter            <int>        ..FV....... set filter type (from 0 to 5) (default bilinear)
+   filter            <int>        ..FV....... set filter type (from 0 to 6) (default bilinear)
      point           0            ..FV.......
      bilinear        1            ..FV.......
      bicubic         2            ..FV.......
      spline16        3            ..FV.......
      spline36        4            ..FV.......
+     spline64        6            ..FV.......
      lanczos         5            ..FV.......
-   f                 <int>        ..FV....... set filter type (from 0 to 5) (default bilinear)
+   f                 <int>        ..FV....... set filter type (from 0 to 6) (default bilinear)
      point           0            ..FV.......
      bilinear        1            ..FV.......
      bicubic         2            ..FV.......
      spline16        3            ..FV.......
      spline36        4            ..FV.......
+     spline64        6            ..FV.......
      lanczos         5            ..FV.......
    out_range         <int>        ..FV....... set color range (from -1 to 1) (default input)
      input           -1           ..FV.......
@@ -18301,6 +18355,8 @@ libspeex AVOptions:
 
 libsvtav1 AVOptions:
 
+libsvtjpegxs AVOptions:
+
 libtheora AVOptions:
 
 libtwolame encoder AVOptions:
@@ -19018,7 +19074,7 @@ http AVOptions:
   -http_proxy        <string>     ED......... set HTTP proxy to tunnel through
   -headers           <string>     ED......... set custom HTTP headers, can override built in default headers
   -content_type      <string>     ED......... set a specific content type for the POST messages
-  -user_agent        <string>     .D......... override User-Agent header (default "Lavf/62.6.101")
+  -user_agent        <string>     .D......... override User-Agent header (default "Lavf/62.8.101")
   -referer           <string>     .D......... override referer header
   -multiple_requests <boolean>    ED......... use persistent connections (default false)
   -post_data         <binary>     ED......... set custom HTTP post data
@@ -19048,7 +19104,7 @@ https AVOptions:
   -http_proxy        <string>     ED......... set HTTP proxy to tunnel through
   -headers           <string>     ED......... set custom HTTP headers, can override built in default headers
   -content_type      <string>     ED......... set a specific content type for the POST messages
-  -user_agent        <string>     .D......... override User-Agent header (default "Lavf/62.6.101")
+  -user_agent        <string>     .D......... override User-Agent header (default "Lavf/62.8.101")
   -referer           <string>     .D......... override referer header
   -multiple_requests <boolean>    ED......... use persistent connections (default false)
   -post_data         <binary>     ED......... set custom HTTP post data
@@ -19506,7 +19562,7 @@ RTSP muxer AVOptions:
   -timeout           <int64>      .D......... set timeout (in microseconds) of socket I/O operations (from INT_MIN to I64_MAX) (default 0)
   -reorder_queue_size <int>        .D......... set number of packets to buffer for handling of reordered packets (from -1 to INT_MAX) (default -1)
   -buffer_size       <int>        ED......... Underlying protocol send/receive buffer size (from -1 to INT_MAX) (default -1)
-  -user_agent        <string>     .D......... override User-Agent header (default "Lavf62.6.101")
+  -user_agent        <string>     .D......... override User-Agent header (default "Lavf62.8.101")
   -ca_file           <string>     ED......... Certificate Authority database file
   -cafile            <string>     ED......... Certificate Authority database file
   -tls_verify        <boolean>    ED......... Verify the peer certificate (default false)
@@ -19619,7 +19675,7 @@ Binary text demuxer AVOptions:
   -framerate         <video_rate> .D......... set framerate (frames per second) (default "25")
 
 bitpacked demuxer AVOptions:
-  -pixel_format      <string>     .D......... set pixel format (default "yuv420p")
+  -pixel_format      <pix_fmt>    .D......... set pixel format (default yuv420p)
   -video_size        <image_size> .D......... set frame size
   -framerate         <video_rate> .D......... set frame rate (default "25")
 
@@ -20006,7 +20062,8 @@ pcm demuxer AVOptions:
   -ch_layout         <channel_layout> .D.........  (default "mono")
 
 rawvideo demuxer AVOptions:
-  -pixel_format      <string>     .D......... set pixel format (default "yuv420p")
+  -stride            [<int>     ].D......... frame line size in bytes
+  -pixel_format      <pix_fmt>    .D......... set pixel format (default yuv420p)
   -video_size        <image_size> .D......... set frame size
   -framerate         <video_rate> .D......... set frame rate (default "25")
 
@@ -20047,7 +20104,7 @@ RTSP demuxer AVOptions:
   -timeout           <int64>      .D......... set timeout (in microseconds) of socket I/O operations (from INT_MIN to I64_MAX) (default 0)
   -reorder_queue_size <int>        .D......... set number of packets to buffer for handling of reordered packets (from -1 to INT_MAX) (default -1)
   -buffer_size       <int>        ED......... Underlying protocol send/receive buffer size (from -1 to INT_MAX) (default -1)
-  -user_agent        <string>     .D......... override User-Agent header (default "Lavf62.6.101")
+  -user_agent        <string>     .D......... override User-Agent header (default "Lavf62.8.101")
   -ca_file           <string>     ED......... Certificate Authority database file
   -cafile            <string>     ED......... Certificate Authority database file
   -tls_verify        <boolean>    ED......... Verify the peer certificate (default false)
@@ -20149,6 +20206,13 @@ eXtended BINary text (XBIN) demuxer AVOptions:
   -linespeed         <int>        .D......... set simulated line speed (bytes per second) (from 1 to INT_MAX) (default 6000)
   -video_size        <image_size> .D......... set video size, such as 640x480 or hd720.
   -framerate         <video_rate> .D......... set framerate (frames per second) (default "25")
+
+imagepipe demuxer AVOptions:
+  -frame_size        <int>        .D......... force frame size in bytes (from 0 to INT_MAX) (default 0)
+  -framerate         <video_rate> .D......... set the video framerate (default "25")
+  -pixel_format      <string>     .D......... set video pixel format
+  -video_size        <image_size> .D......... set video size
+  -loop              <boolean>    .D......... force loop over input file sequence (default false)
 
 imagepipe demuxer AVOptions:
   -frame_size        <int>        .D......... force frame size in bytes (from 0 to INT_MAX) (default 0)
@@ -21252,6 +21316,10 @@ aloop AVOptions:
 
 amerge AVOptions:
    inputs            <int>        ..F.A...... specify the number of inputs (from 1 to 64) (default 2)
+   layout_mode       <int>        ..F.A...... method used to determine the output channel layout (from 0 to 2) (default legacy)
+     legacy          0            ..F.A......
+     reset           1            ..F.A......
+     normal          2            ..F.A......
 
 ametadata AVOptions:
    mode              <int>        ..F.A...... set a mode of operation (from 0 to 4) (default select)
@@ -21490,7 +21558,8 @@ asidedata AVOptions:
      SPHERICAL       13           ..F.A...... 
      CONTENT_LIGHT_LEVEL 14           ..F.A...... 
      ICC_PROFILE     15           ..F.A...... 
-     S12M_TIMECOD    16           ..F.A...... 
+     S12M_TIMECOD    16           ..F.A.....P 
+     S12M_TIMECODE   16           ..F.A...... 
      DYNAMIC_HDR_PLUS 17           ..F.A...... 
      REGIONS_OF_INTEREST 18           ..F.A...... 
      VIDEO_ENC_PARAMS 19           ..F.A...... 
@@ -24059,7 +24128,7 @@ colorspace AVOptions:
      mpeg            1            ..FV....... 
      pc              2            ..FV....... 
      jpeg            2            ..FV....... 
-   primaries         <int>        ..FV....... Output color primaries (from 0 to 22) (default 2)
+   primaries         <int>        ..FV....... Output color primaries (from 0 to 256) (default 2)
      bt709           1            ..FV....... 
      bt470m          4            ..FV....... 
      bt470bg         5            ..FV....... 
@@ -24072,7 +24141,8 @@ colorspace AVOptions:
      bt2020          9            ..FV....... 
      jedec-p22       22           ..FV....... 
      ebu3213         22           ..FV....... 
-   trc               <int>        ..FV....... Output transfer characteristics (from 0 to 18) (default 2)
+     vgamut          256          ..FV....... 
+   trc               <int>        ..FV....... Output transfer characteristics (from 0 to 256) (default 2)
      bt709           1            ..FV....... 
      bt470m          4            ..FV....... 
      gamma22         4            ..FV....... 
@@ -24087,6 +24157,7 @@ colorspace AVOptions:
      iec61966-2-4    11           ..FV....... 
      bt2020-10       14           ..FV....... 
      bt2020-12       15           ..FV....... 
+     vlog            256          ..FV....... 
    format            <int>        ..FV....... Output pixel format (from -1 to 161) (default -1)
      yuv420p         0            ..FV....... 
      yuv420p10       62           ..FV....... 
@@ -24132,7 +24203,7 @@ colorspace AVOptions:
      mpeg            1            ..FV....... 
      pc              2            ..FV....... 
      jpeg            2            ..FV....... 
-   iprimaries        <int>        ..FV....... Input color primaries (from 0 to 22) (default 2)
+   iprimaries        <int>        ..FV....... Input color primaries (from 0 to 256) (default 2)
      bt709           1            ..FV....... 
      bt470m          4            ..FV....... 
      bt470bg         5            ..FV....... 
@@ -24145,7 +24216,8 @@ colorspace AVOptions:
      bt2020          9            ..FV....... 
      jedec-p22       22           ..FV....... 
      ebu3213         22           ..FV....... 
-   itrc              <int>        ..FV....... Input transfer characteristics (from 0 to 18) (default 2)
+     vgamut          256          ..FV....... 
+   itrc              <int>        ..FV....... Input transfer characteristics (from 0 to 256) (default 2)
      bt709           1            ..FV....... 
      bt470m          4            ..FV....... 
      gamma22         4            ..FV....... 
@@ -24160,6 +24232,7 @@ colorspace AVOptions:
      iec61966-2-4    11           ..FV....... 
      bt2020-10       14           ..FV....... 
      bt2020-12       15           ..FV....... 
+     vlog            256          ..FV....... 
 
 colorspace_cuda AVOptions:
    range             <int>        ..FV....... Output video range (from 0 to 2) (default 0)
@@ -27364,7 +27437,8 @@ sidedata AVOptions:
      SPHERICAL       13           ..FV....... 
      CONTENT_LIGHT_LEVEL 14           ..FV....... 
      ICC_PROFILE     15           ..FV....... 
-     S12M_TIMECOD    16           ..FV....... 
+     S12M_TIMECOD    16           ..FV......P 
+     S12M_TIMECODE   16           ..FV....... 
      DYNAMIC_HDR_PLUS 17           ..FV....... 
      REGIONS_OF_INTEREST 18           ..FV....... 
      VIDEO_ENC_PARAMS 19           ..FV....... 
@@ -28797,19 +28871,21 @@ zscale AVOptions:
      ordered         1            ..FV.......
      random          2            ..FV.......
      error_diffusion 3            ..FV.......
-   filter            <int>        ..FV....... set filter type (from 0 to 5) (default bilinear)
+   filter            <int>        ..FV....... set filter type (from 0 to 6) (default bilinear)
      point           0            ..FV.......
      bilinear        1            ..FV.......
      bicubic         2            ..FV.......
      spline16        3            ..FV.......
      spline36        4            ..FV.......
+     spline64        6            ..FV.......
      lanczos         5            ..FV.......
-   f                 <int>        ..FV....... set filter type (from 0 to 5) (default bilinear)
+   f                 <int>        ..FV....... set filter type (from 0 to 6) (default bilinear)
      point           0            ..FV.......
      bilinear        1            ..FV.......
      bicubic         2            ..FV.......
      spline16        3            ..FV.......
      spline36        4            ..FV.......
+     spline64        6            ..FV.......
      lanczos         5            ..FV.......
    out_range         <int>        ..FV....... set color range (from -1 to 1) (default input)
      input           -1           ..FV.......
@@ -30416,27 +30492,27 @@ down/up             seek backward/forward 1 minute
 page down/page up   seek backward/forward 10 minutes
 right mouse click   seek to percentage in file corresponding to fraction of width
 left double-click   toggle full screen
-ffplay version 2025-11-10-git-133a0bcb13-full_build-www.gyan.dev Copyright (c) 2003-2025 the FFmpeg developers
+ffplay version 2025-12-28-git-9ab2a437a1-full_build-www.gyan.dev Copyright (c) 2003-2025 the FFmpeg developers
   built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
-  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
-  libavutil      60. 17.100 / 60. 17.100
-  libavcodec     62. 19.100 / 62. 19.100
-  libavformat    62.  6.101 / 62.  6.101
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 20.100 / 60. 20.100
+  libavcodec     62. 23.102 / 62. 23.102
+  libavformat    62.  8.101 / 62.  8.101
   libavdevice    62.  2.100 / 62.  2.100
-  libavfilter    11.  9.100 / 11.  9.100
+  libavfilter    11. 10.101 / 11. 10.101
   libswscale      9.  3.100 /  9.  3.100
   libswresample   6.  2.100 /  6.  2.100
 
 FFprobe Help:
 ------------------------------------
-ffprobe version 2025-11-10-git-133a0bcb13-full_build-www.gyan.dev Copyright (c) 2007-2025 the FFmpeg developers
+ffprobe version 2025-12-28-git-9ab2a437a1-full_build-www.gyan.dev Copyright (c) 2007-2025 the FFmpeg developers
   built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
-  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
-  libavutil      60. 17.100 / 60. 17.100
-  libavcodec     62. 19.100 / 62. 19.100
-  libavformat    62.  6.101 / 62.  6.101
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 20.100 / 60. 20.100
+  libavcodec     62. 23.102 / 62. 23.102
+  libavformat    62.  8.101 / 62.  8.101
   libavdevice    62.  2.100 / 62.  2.100
-  libavfilter    11.  9.100 / 11.  9.100
+  libavfilter    11. 10.101 / 11. 10.101
   libswscale      9.  3.100 /  9.  3.100
   libswresample   6.  2.100 /  6.  2.100
 Simple multimedia streams analyzer
@@ -30634,7 +30710,7 @@ http AVOptions:
   -http_proxy        <string>     ED......... set HTTP proxy to tunnel through
   -headers           <string>     ED......... set custom HTTP headers, can override built in default headers
   -content_type      <string>     ED......... set a specific content type for the POST messages
-  -user_agent        <string>     .D......... override User-Agent header (default "Lavf/62.6.101")
+  -user_agent        <string>     .D......... override User-Agent header (default "Lavf/62.8.101")
   -referer           <string>     .D......... override referer header
   -multiple_requests <boolean>    ED......... use persistent connections (default false)
   -post_data         <binary>     ED......... set custom HTTP post data
@@ -30664,7 +30740,7 @@ https AVOptions:
   -http_proxy        <string>     ED......... set HTTP proxy to tunnel through
   -headers           <string>     ED......... set custom HTTP headers, can override built in default headers
   -content_type      <string>     ED......... set a specific content type for the POST messages
-  -user_agent        <string>     .D......... override User-Agent header (default "Lavf/62.6.101")
+  -user_agent        <string>     .D......... override User-Agent header (default "Lavf/62.8.101")
   -referer           <string>     .D......... override referer header
   -multiple_requests <boolean>    ED......... use persistent connections (default false)
   -post_data         <binary>     ED......... set custom HTTP post data
@@ -31122,7 +31198,7 @@ RTSP muxer AVOptions:
   -timeout           <int64>      .D......... set timeout (in microseconds) of socket I/O operations (from INT_MIN to I64_MAX) (default 0)
   -reorder_queue_size <int>        .D......... set number of packets to buffer for handling of reordered packets (from -1 to INT_MAX) (default -1)
   -buffer_size       <int>        ED......... Underlying protocol send/receive buffer size (from -1 to INT_MAX) (default -1)
-  -user_agent        <string>     .D......... override User-Agent header (default "Lavf62.6.101")
+  -user_agent        <string>     .D......... override User-Agent header (default "Lavf62.8.101")
   -ca_file           <string>     ED......... Certificate Authority database file
   -cafile            <string>     ED......... Certificate Authority database file
   -tls_verify        <boolean>    ED......... Verify the peer certificate (default false)
@@ -31235,7 +31311,7 @@ Binary text demuxer AVOptions:
   -framerate         <video_rate> .D......... set framerate (frames per second) (default "25")
 
 bitpacked demuxer AVOptions:
-  -pixel_format      <string>     .D......... set pixel format (default "yuv420p")
+  -pixel_format      <pix_fmt>    .D......... set pixel format (default yuv420p)
   -video_size        <image_size> .D......... set frame size
   -framerate         <video_rate> .D......... set frame rate (default "25")
 
@@ -31622,7 +31698,8 @@ pcm demuxer AVOptions:
   -ch_layout         <channel_layout> .D.........  (default "mono")
 
 rawvideo demuxer AVOptions:
-  -pixel_format      <string>     .D......... set pixel format (default "yuv420p")
+  -stride            [<int>     ].D......... frame line size in bytes
+  -pixel_format      <pix_fmt>    .D......... set pixel format (default yuv420p)
   -video_size        <image_size> .D......... set frame size
   -framerate         <video_rate> .D......... set frame rate (default "25")
 
@@ -31663,7 +31740,7 @@ RTSP demuxer AVOptions:
   -timeout           <int64>      .D......... set timeout (in microseconds) of socket I/O operations (from INT_MIN to I64_MAX) (default 0)
   -reorder_queue_size <int>        .D......... set number of packets to buffer for handling of reordered packets (from -1 to INT_MAX) (default -1)
   -buffer_size       <int>        ED......... Underlying protocol send/receive buffer size (from -1 to INT_MAX) (default -1)
-  -user_agent        <string>     .D......... override User-Agent header (default "Lavf62.6.101")
+  -user_agent        <string>     .D......... override User-Agent header (default "Lavf62.8.101")
   -ca_file           <string>     ED......... Certificate Authority database file
   -cafile            <string>     ED......... Certificate Authority database file
   -tls_verify        <boolean>    ED......... Verify the peer certificate (default false)
@@ -31765,6 +31842,13 @@ eXtended BINary text (XBIN) demuxer AVOptions:
   -linespeed         <int>        .D......... set simulated line speed (bytes per second) (from 1 to INT_MAX) (default 6000)
   -video_size        <image_size> .D......... set video size, such as 640x480 or hd720.
   -framerate         <video_rate> .D......... set framerate (frames per second) (default "25")
+
+imagepipe demuxer AVOptions:
+  -frame_size        <int>        .D......... force frame size in bytes (from 0 to INT_MAX) (default 0)
+  -framerate         <video_rate> .D......... set the video framerate (default "25")
+  -pixel_format      <string>     .D......... set video pixel format
+  -video_size        <image_size> .D......... set video size
+  -loop              <boolean>    .D......... force loop over input file sequence (default false)
 
 imagepipe demuxer AVOptions:
   -frame_size        <int>        .D......... force frame size in bytes (from 0 to INT_MAX) (default 0)
@@ -32555,6 +32639,8 @@ libspeex AVOptions:
 
 libsvtav1 AVOptions:
 
+libsvtjpegxs AVOptions:
+
 libtheora AVOptions:
 
 libtwolame encoder AVOptions:
@@ -33162,6 +33248,7 @@ YT-DLP Help:
 Usage: yt-dlp.exe [OPTIONS] URL [URL...]
 
 Options:
+
   General Options:
     -h, --help                      Print this help text and exit
     --version                       Print program version and exit
@@ -33182,7 +33269,6 @@ Options:
                                     playlist (default)
     --abort-on-error                Abort downloading of further videos if an
                                     error occurs (Alias: --no-ignore-errors)
-    --dump-user-agent               Display the current user-agent and exit
     --list-extractors               List all supported extractors and exit
     --extractor-descriptions        Output descriptions of all supported
                                     extractors and exit
@@ -33217,7 +33303,7 @@ Options:
                                     containing directory ("-" for stdin). Can be
                                     used multiple times and inside other
                                     configuration files
-    --plugin-dirs PATH              Path to an additional directory to search
+    --plugin-dirs DIR               Path to an additional directory to search
                                     for plugins. This option can be used
                                     multiple times to add multiple directories.
                                     Use "default" to search the default plugin
@@ -33225,6 +33311,37 @@ Options:
     --no-plugin-dirs                Clear plugin directories to search,
                                     including defaults and those provided by
                                     previous --plugin-dirs
+    --js-runtimes RUNTIME[:PATH]    Additional JavaScript runtime to enable,
+                                    with an optional location for the runtime
+                                    (either the path to the binary or its
+                                    containing directory). This option can be
+                                    used multiple times to enable multiple
+                                    runtimes. Supported runtimes are (in order
+                                    of priority, from highest to lowest): deno,
+                                    node, quickjs, bun. Only "deno" is enabled
+                                    by default. The highest priority runtime
+                                    that is both enabled and available will be
+                                    used. In order to use a lower priority
+                                    runtime when "deno" is available, --no-js-
+                                    runtimes needs to be passed before enabling
+                                    other runtimes
+    --no-js-runtimes                Clear JavaScript runtimes to enable,
+                                    including defaults and those provided by
+                                    previous --js-runtimes
+    --remote-components COMPONENT   Remote components to allow yt-dlp to fetch
+                                    when required. This option is currently not
+                                    needed if you are using an official
+                                    executable or have the requisite version of
+                                    the yt-dlp-ejs package installed. You can
+                                    use this option multiple times to allow
+                                    multiple components. Supported values:
+                                    ejs:npm (external JavaScript components from
+                                    npm), ejs:github (external JavaScript
+                                    components from yt-dlp-ejs GitHub). By
+                                    default, no remote components are allowed
+    --no-remote-components          Disallow fetching of all remote components,
+                                    including any previously allowed by
+                                    --remote-components or defaults.
     --flat-playlist                 Do not extract a playlist's URL result
                                     entries; some entry metadata may be missing
                                     and downloading may be bypassed
@@ -33310,7 +33427,7 @@ Options:
                                     two-letter ISO 3166-2 country code
 
   Video Selection:
-    -I, --playlist-items ITEM_SPEC  Comma separated playlist_index of the items
+    -I, --playlist-items ITEM_SPEC  Comma-separated playlist_index of the items
                                     to download. You can specify a range using
                                     "[START]:[STOP][:STEP]". For backward
                                     compatibility, START-STOP is also supported.
@@ -33436,8 +33553,6 @@ Options:
                                     --playlist-random and --playlist-reverse
     --no-lazy-playlist              Process videos in the playlist only after
                                     the entire playlist is parsed (default)
-    --xattr-set-filesize            Set file xattribute ytdl.filesize with
-                                    expected file size
     --hls-use-mpegts                Use the mpegts container for HLS videos;
                                     allowing some players to play the video
                                     while downloading, and reducing the chance
@@ -33461,9 +33576,9 @@ Options:
                                     use (optionally) prefixed by the protocols
                                     (http, ftp, m3u8, dash, rstp, rtmp, mms) to
                                     use it for. Currently supports native,
-                                    aria2c, avconv, axel, curl, ffmpeg, httpie,
-                                    wget. You can use this option multiple times
-                                    to set different downloaders for different
+                                    aria2c, axel, curl, ffmpeg, httpie, wget.
+                                    You can use this option multiple times to
+                                    set different downloaders for different
                                     protocols. E.g. --downloader aria2c
                                     --downloader "dash,m3u8:native" will use
                                     aria2c for http/ftp downloads, and the
@@ -33954,12 +34069,13 @@ Options:
                                     for, separated by commas. Available
                                     categories are sponsor, intro, outro,
                                     selfpromo, preview, filler, interaction,
-                                    music_offtopic, poi_highlight, chapter, all
-                                    and default (=all). You can prefix the
-                                    category with a "-" to exclude it. See [1]
-                                    for descriptions of the categories. E.g.
-                                    --sponsorblock-mark all,-preview [1] https:/
-                                    /wiki.sponsor.ajay.app/w/Segment_Categories
+                                    music_offtopic, hook, poi_highlight,
+                                    chapter, all and default (=all). You can
+                                    prefix the category with a "-" to exclude
+                                    it. See [1] for descriptions of the
+                                    categories. E.g. --sponsorblock-mark
+                                    all,-preview [1] https://wiki.sponsor.ajay.a
+                                    pp/w/Segment_Categories
     --sponsorblock-remove CATS      SponsorBlock categories to be removed from
                                     the video file, separated by commas. If a
                                     category is present in both mark and remove,
@@ -34022,14 +34138,14 @@ See full documentation at  https://github.com/yt-dlp/yt-dlp#readme
 
 HandBrakeCLI Help:
 ------------------------------------
-[19:37:17] Compile-time hardening features are enabled
-[19:37:17] nvenc: version 13.0 is available
-[19:37:17] nvdec: is available
-[19:37:18] CUDA Version: 8.9
-[19:37:18] vcn: not available on this system
-[19:37:19] qsv: is available on this system
-[19:37:19] hb_init: starting libhb thread
-[19:37:19] thread 2 started ("libhb")
+[20:31:16] Compile-time hardening features are enabled
+[20:31:16] nvenc: version 13.0 is available
+[20:31:16] nvdec: is available
+[20:31:17] CUDA Version: 8.9
+[20:31:17] vcn: not available on this system
+[20:31:19] qsv: is available on this system
+[20:31:19] hb_init: starting libhb thread
+[20:31:19] thread 2 started ("libhb")
 Usage: HandBrakeCLI [options] -i <source> -o <destination>
 
 General Options --------------------------------------------------------------
@@ -34789,7 +34905,7 @@ HandBrake has exited.
 
 DUF Help:
 ------------------------------------
-Usage of C:\Program Files\JJmpeg\tools\duf.exe:
+Usage of C:\Program Files\MuxForge\tools\duf.exe:
   -all
     	include pseudo, duplicate, inaccessible file systems
   -avail-threshold string
