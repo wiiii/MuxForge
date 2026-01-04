@@ -6,7 +6,6 @@ MuxForge is a custom C++ library that provides a simplified interface for workin
 * [HandBrake](https://handbrake.fr/downloads2.php)
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 * [python](https://www.python.org/downloads/)
-* [bat](https://github.com/sharkdp/bat)
 * [VT-PR](https://github.com/chu23465/VT-PR)
 
 ## Features
