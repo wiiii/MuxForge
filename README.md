@@ -5,9 +5,7 @@ MuxForge is a custom C++ library that provides a simplified interface for workin
 * [FFmpeg, FFplay, FFprobe](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z)
 * [HandBrake](https://handbrake.fr/downloads2.php)
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp)
-* [y-cruncher](https://www.numberworld.org/y-cruncher/)
 * [python](https://www.python.org/downloads/)
-* [duf](https://github.com/muesli/duf)
 * [bat](https://github.com/sharkdp/bat)
 * [VT-PR](https://github.com/chu23465/VT-PR)
 
