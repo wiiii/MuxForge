@@ -78,6 +78,8 @@ This project uses FFmpeg which is licensed to the FFmpeg developers, specificall
 ## Miscellaneous
 1. You are free to distribute this repository under any condition. 
 2. If anyone has any requests that they would like to see or ways to make this better, *please* tell me.
+3. Please do not expect me to build every [release](https://github.com/codester2835/MuxForge/releases), if you would like the latest updates of the binaries (FFmpeg, yt-dlp, etc.) [clone the repository](https://github.com/codester2835/MuxForge?tab=readme-ov-file#installation). 
+4. Repeatedly adding this to PATH is *not* necessary.  
 
 ## Status
 MuxForge is currently *only* available on 64-bit Windows versions. I apologize for the inconvenience.
