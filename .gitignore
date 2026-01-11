@@ -1,3 +1,4 @@
 installer.iss
 /Output/
 /tools/install.bat
+auto-ffmpeg.py
