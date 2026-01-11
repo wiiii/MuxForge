@@ -1,86 +1,105 @@
 # MuxForge
+
 ## Description
-MuxForge is a custom C++ library that provides a simplified interface for working with FFmpeg, FFplay, FFprobe, HandBrake, yt-dlp, and much more.
+MuxForge is a C++ utility library that provides a streamlined interface for working with popular media‑processing tools such as FFmpeg, FFplay, FFprobe, HandBrake, yt‑dlp, and others. Its goal is to simplify complex command‑line workflows into a unified, user‑friendly experience.
+
 ## Binaries
-* [FFmpeg, FFplay, FFprobe](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z)
-* [HandBrake](https://handbrake.fr/downloads2.php)
-* [yt-dlp](https://github.com/yt-dlp/yt-dlp)
-* [python](https://www.python.org/downloads/)
-* [VT-PR](https://github.com/chu23465/VT-PR)
+MuxForge relies on several external tools. You can download them here:
+
+- [FFmpeg, FFplay, FFprobe](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z)  
+- [HandBrake](https://handbrake.fr/downloads2.php)  
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp)  
+- [Python](https://www.python.org/downloads/)  
+- [VT‑PR](https://github.com/chu23465/VT-PR)
 
 ## Features
-MuxForge has many features, none of which I claim as my own. I have simply wrapped existing tools and libraries to provide a simplified interface for users. I do __not__ claim responsibility for any file or system damage.  Similarly, I do __not__ claim responsibility for creating any DRM bypassing tools.  I __do **not**__ promote piracy in any way shape or form.
-* Video and audio encoding and decoding using FFmpeg
-* Video and audio transcoding using HandBrake
-* Video downloading using yt-dlp
-* Video and audio analysis using FFprobe
+MuxForge wraps existing open‑source tools to provide a simplified interface. None of the underlying functionality is my own creation; I only provide the wrapper.  
+I do **not** claim responsibility for any system or file damage, nor do I claim responsibility for creating or enabling DRM‑bypassing tools. I do **not** promote piracy in any form.
 
-* For more options, run:
+Key capabilities include:
+- Video and audio encoding/decoding via FFmpeg  
+- Video and audio transcoding via HandBrake  
+- Video downloading via yt‑dlp  
+- Media analysis via FFprobe  
+
+For more options, run:
 ```
 MuxForge help
 ```
-* <u>or</u> visit the [advanced help](https://github.com/codester2835/MuxForge/blob/main/Advanced_Help.txt) file
+
+Or view the [advanced help](https://github.com/codester2835/MuxForge/blob/main/Advanced_Help.txt) file.
 
 ## Installation
-__Insure you are running in administrator command prompt.__
+**Ensure you are running in an Administrator Command Prompt.**
+
 1. Clone the repository:
 ```
 git clone https://github.com/codester2835/MuxForge.git
 ```
+
 2. Navigate to the project directory:
 ```
 cd MuxForge\bin
 ```
-3. Add the `bin` directory to your system PATH.
+
+3. Add the `bin` directory to your system PATH:
 ```
 for /f "usebackq tokens=2*" %A in (`reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v Path`) do reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v Path /t REG_EXPAND_SZ /d "%B;%CD%" /f
 ```
 
-
-__Or__
-> Download the latest installer file from the [Releases](https://github.com/codester2835/MuxForge/releases) page and run it.
+**Or:**  
+Download the latest installer from the [Releases](https://github.com/codester2835/MuxForge/releases) page and run it.
 
 ## Disclaimer
-By using this project you agree that:
-`The developer shall not be held responsible for any account suspensions, terminations, penalties or legal action taken/imposed by third-party platforms. The User acknowledges and agrees that they are solely responsible for complying with all terms, policies, copyright and guidelines of any such platforms.`
+By using this project, you agree that:
+
+`The developer shall not be held responsible for any account suspensions, terminations, penalties, or legal action taken by third‑party platforms. The user is solely responsible for complying with all terms, policies, copyright rules, and guidelines of any such platforms.`
 
 ## Usage
-Once installed, you can use MuxForge from the command line. Run the following command for options:
+Once installed, run the following command for general options:
 ```
 MuxForge help
-```	
-For a full list of commands, run:
 ```
-MuxForge help_advanced <insert path here>
+
+For a full list of commands:
 ```
+MuxForge help_advanced <path>
+```
+
 ## How to Contribute
+1. Fork the repository.  
+2. Create a new branch:  
+   ```
+   git checkout -b main
+   ```
+3. Make your changes and commit them:  
+   ```
+   git commit -m "<commit_message>"
+   ```
+4. Push your branch:  
+   ```
+   git push origin <project_name>/<location>
+   ```
+5. Open a pull request.
 
-If you want to contribute to this project, follow the steps below:
+For more details, see GitHub’s guide on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-1. Fork this repository.
-2. Create a branch: `git checkout -b main`.
-3. Make your changes and confirm them: `git commit -m '<commit_message>'`
-4. Send to the original branch: `git push origin <project_name> / <location>`
-5. Create the pull request.
-
-Alternatively, consult the GitHub documentation on [how to create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-
-## Licence
+## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Legal
-I (the creator) do __NOT__ promote piracy, or theft in any way.  This project is to be used **ONLY** for archival/personal uses.
+I (the creator) do **NOT** promote piracy or theft. This project is intended **ONLY** for archival and personal use.
 
 ## Regarding FFmpeg
-This project uses FFmpeg which is licensed to the FFmpeg developers, specifically [gyan.dev](https://www.gyan.dev/ffmpeg/builds/). The lincence is the [<u>Attribution-NonCommercial-NoDerivatives 4.0 International CC BY-NC-ND 4.0 Deed</u>](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+MuxForge uses FFmpeg, which is licensed to the FFmpeg developers, specifically the builds provided by [gyan.dev](https://www.gyan.dev/ffmpeg/builds/).  
+FFmpeg is licensed under the **Attribution‑NonCommercial‑NoDerivatives 4.0 International (CC BY‑NC‑ND 4.0)** license:  
+[https://creativecommons.org/licenses/by-nc-nd/4.0/](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ## Miscellaneous
-1. You are free to distribute this repository under any condition. 
-2. If anyone has any requests that they would like to see or ways to make this better, *please* tell me.
-3. Please do not expect me to build every [release](https://github.com/codester2835/MuxForge/releases), if you would like the latest updates of the binaries (FFmpeg, yt-dlp, etc.) [clone the repository](https://github.com/codester2835/MuxForge?tab=readme-ov-file#installation). 
-4. Repeatedly adding this to PATH is *not* necessary.  
+1. You are free to distribute this repository under any conditions.  
+2. Suggestions and feature requests are welcome.  
+3. Not all releases will include updated binaries. For the latest versions of FFmpeg, yt‑dlp, etc., please clone the repository.  
+4. Re‑adding the `bin` directory to PATH is not necessary after the first setup.
 
 ## Status
-MuxForge is currently *only* available on 64-bit Windows versions. I apologize for the inconvenience.
-
+MuxForge is currently available **only** for 64‑bit Windows systems. I apologize for the inconvenience.
