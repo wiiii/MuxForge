@@ -94,12 +94,14 @@ I (the creator) do **NOT** promote piracy or theft. This project is intended **O
 MuxForge uses FFmpeg, which is licensed to the FFmpeg developers, specifically the builds provided by [gyan.dev](https://www.gyan.dev/ffmpeg/builds/).  
 FFmpeg is licensed under the **Attribution‑NonCommercial‑NoDerivatives 4.0 International (CC BY‑NC‑ND 4.0)** license:  
 [https://creativecommons.org/licenses/by-nc-nd/4.0/](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+I am currently working on building a custom FFmpeg, please be patient.  
 
 ## Miscellaneous
 1. You are free to distribute this repository under any conditions.  
 2. Suggestions and feature requests are welcome.  
 3. Not all releases will include updated binaries. For the latest versions of FFmpeg, yt‑dlp, etc., please clone the repository.  
 4. Re‑adding the `bin` directory to PATH is not necessary after the first setup.
+5. Code for this project will be available soon.
 
 ## Status
 MuxForge is currently available **only** for 64‑bit Windows systems. I apologize for the inconvenience.
