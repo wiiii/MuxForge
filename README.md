@@ -96,6 +96,9 @@ FFmpeg is licensed under the **Attribution‑NonCommercial‑NoDerivatives 4.0 I
 [https://creativecommons.org/licenses/by-nc-nd/4.0/](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 I am currently working on building a custom FFmpeg, please be patient.  
 
+## Regarding VT-PR
+The original repository for VT-PR has been taken down (rest in peace).  Please let me know if you want to see anything added.
+
 ## Miscellaneous
 1. You are free to distribute this repository under any conditions.  
 2. Suggestions and feature requests are welcome.  
